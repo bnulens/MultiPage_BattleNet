@@ -24,4 +24,4 @@ Brecht - _Shop_  brechtnulens@gmail.com
 
 ### **<u>Issues</u>**
 
-- lijst hier 
+> - "git pull > git add > git commit > git push"
