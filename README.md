@@ -13,7 +13,9 @@ Brecht - _Shop_  brechtnulens@gmail.com
 
 >* Navbar als laatste (?)
 
->* Fonts list:
+> * Fonts used:   
+> - link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"  
+> - font-family: 'Open Sans', sans-serif;
 
 >* Kleurcodes in `RGB(A)`
 
