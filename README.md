@@ -1,7 +1,7 @@
 # MultiPage_BattleNet
 
 
-<u>**Rolverdeling:**</u> 
+<u>**Rolverdeling:**</u>
 
 Kremena - _index.html_  kremdo@gmail.com  
 Birthe  - _News_    lambrechtsbirthe@gmail.com  
@@ -21,6 +21,10 @@ Brecht - _Shop_  brechtnulens@gmail.com
 
 
 >* Tags met "class" of "id" benoeming:
+
+>* Compare the head of all .html files
+
+
 
 
 
