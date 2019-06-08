@@ -2,23 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Settings</title>
+    <title>Battle.net-Settings</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css">
   </head>
-  <body>
+  <body id="settings">
   <div class="wrapperd">
     <div class="settingsd">
-      <input type="button" onclick="alert('Greetings :  Birthe...Kremena...Brecht...Danny')" value="X">
-      <h1>Settings</h1>
+
+        <h1>Settings</h1>
+        <input type="button" onclick="alert('Greetings :  Birthe...Kremena...Brecht...Danny')" value="X">
     </div>
-    <div class="generald">
-      <h1>General</h1>
+  <!----------------------start nav------------->
+    <div class="navd">
+      <p>
+        <img src="images/general5.png" alt="general">
+        <a href="settings.html"><input class="button1d" type="button" onclick="alert('Welcome in General')" value="General" /></a>
+      </p>
+      <p>
+        <img src="images/sounds.png" alt="sound">
+        <a href="settings.html">
+            <input type="button" onclick="alert('Welcome to Sounds & Notifications')" value="Sounds & Notifications"></a>
+      </p>
+      <p>
+        <img src="images/friends.png" alt="">
+          <a href="settings.html"><input type="button" onclick="alert('Welcome in Friends & Chat')" value="Friends & Chat"></a>
+      </p>
+
+      <p>
+        <img src="images/voice.png" alt="voice">
+          <a  href="settings.html"><input type="button" onclick="alert('welcome to Voice Chat')" value="Voice Chat"></a>
+      </p>
+
+      <p>
+        <img src="images/streaming.png" alt="streaming">
+        <a href="settings.html"><input type="button" onclick="alert('Welcome by Streaming')" value="Streaming"></a>
+      </p>
+
+      <p>
+        <img src="images/install.png" alt="install">
+        <a href="settings.html"><input type="button" onclick="alert('Welcome by Game Install/Update')" value="Game Install/Update"></a>
+      </p>
+
+      <p>
+        <img src="images/settings.png" alt="settings">
+        <a href="settings.html"><input type="button" onclick="alert('Welcome by Game Settings')" value="Game Settings"></a>
+      </p>
+
+      <p>
+        <img src="images/info.png" alt="info">
+        <a href="settings.html"><input type="button" onclick="alert('What About')" value="About"></a>
+      </p>
+
+      <p>
+        <img src="images/beta.png" alt="beta">
+        <a href="settings.html"><input type="button" onclick="alert('Welcome in Beta')" value="Beta"></a>
+      </p>
+
     </div>
+<!--------------end nav -  start form------------------------->
     <div class="formd">
-      <div class="h3d">
-        <h3>BATTLE.NET LANGUAGE</h3>
-      </div>
-       <form action="index.html">
+      <h2 class="h2d">General</h2>
+
+      <form >
+
+      <span class="fined"><p >BATTLE.NET LANGUAGE</p></span>
          <select name="Language" size="1">
          <option value="english">English</option>
          <option value="dutch">dutch</option>
@@ -28,62 +76,45 @@
          <p>
          <input type="checkbox" name="Battle.net"value="launch">
             Launch Battle.net when you start your computer<br>
-         <input id="launchd" type="checkbox" name="Battle.net min"     value="Launch min">
+        <div class="launchd">
+         <input type="checkbox" name="Battle.net min"     value="Launch min">
           Launch Battle.net minimized to the system tray<br>
+        </div>
          <input type="checkbox" name="multiple" value="allow multiple">
-          Allow multiple instances of Battle.net
+          Allow multiple instances of Battle.net <img src="images/question.png" alt="question">
         </p>
-      <div class="h3d">
-        <h3>WHEN I CLICK 'X' AT THE TOP OF THE WINDOW</h3>
-      </div>
+    <span class="fined"><p>WHEN I CLICK 'X' AT THE TOP OF THE WINDOW</p></span>
+
         <select name="play exit" size="1">
         <option value="exit">Exit Battle.net</option>
         <option value="play">Keep the Battle.net window open</option>
         </select><br>
-      <div class="h3d">
-        <h3>WHEN I LAUNCH A GAME</h3>
-      </div>
+
+    <span class="fined"><p>WHEN I LAUNCH A GAME</p></span>
+
         <select name="exit play" size="1">
         <option value="play">Keep the Battle.net window open</option>
         <option value="exit">Exit Battle.net</option>
       </select><br>
       <p>
-      <input type="reset" value="Reset Dismissed Dialogs"></p>
-     <div class="h3d">
-       <h3>Security Settings</h3>
-     </div>
+      <input type="reset" value="Reset Dismissed Dialogs"><img src="images/question.png" alt="question"></p>
+  </form>
+       <h2 class="h2d">Security Settings</h2>
+  <form action="index.html">
      <input type="checkbox" name="e-mail">
-       Remember email address<br>
+       Remember email address<img src="images/question.png" alt="question"><br>
+    <div class="logind">
     <input type="checkbox" name="login">
-       Keep me logged in <br>
+       Keep me logged in<img src="images/question.png" alt="question"> <br>
+    </div>
        <p>
        <input type="reset" value="Reset to Defaults">
-       <span class="submitd"><input type="submit" value="Done"></span>
+       <input class="submitd" type="submit" value="Done">
       </p>
-   </form>
+
+ </form>
   </div>
- <div class="navd">
- <nav>
-   <ul>
-     <li><a href="settings.html">
-       <input type="button" onclick="alert('Welcome in General')" value="General"></a></li>
-     <li><a href="settings.html">
-         <input type="button" onclick="alert('Welcome to Sounds & Notifications')" value="Sounds & Notifications"></a></li>
-     <li><a href="settings.html"><input type="button"    onclick="alert('Welcome in Friends & Chat')" value="Friends & Chat"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert('welcome to Voice Chat')" value="Voice Chat"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert('Welcome by Streaming')" value="Streaming"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert('Welcome by Game Install/Update')" value="Game Install/Update"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert(Welcome by Game Settings'')" value="Game Settings"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert('What About')" value="About"></a></li>
-     <li><a href="settings.html"><input type="button" onclick="alert('Welcome in Beta')" value="Beta"></a></li>
-   </ul>
- </nav>
 
-
-
-
-
- </div>
   </div>
 
   </body>
