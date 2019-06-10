@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+
 html, body, .mainK {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
-
 
 #games {
   display: grid;
@@ -28,7 +28,7 @@ header {
   margin-left: 25px;
   grid-column-start: 1;
   grid-column-end: 3;
-  z-index: 3;
+  z-index: 2;
 }
 
 .nav-bg {
@@ -37,7 +37,6 @@ header {
   filter: blur(10px);
   background-color: black;
   margin-top: 20px;
-
 }
 
 header a:hover {
@@ -65,7 +64,7 @@ nav a {
   font-size: 16px;
   color: white;
 }
-/*main*/
+/*main article*/
 
 .mainK {
   display: flex;
@@ -87,7 +86,6 @@ nav a {
 .WoW_logo {
   height: auto;
   width: auto;
-  scale: 0.8;
 }
 
 .OptRedeem {
@@ -136,13 +134,8 @@ nav a {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-self: flex-start;
   flex: auto;
   padding-bottom: 20px;
-}
-
-.mainK footer span {
-  padding-left: 10px;
 }
 
 .labelK {
@@ -166,7 +159,10 @@ nav a {
   align-items: flex-end;
 }
 
+.ButtonK {
+  padding-right: 10px;
 }
+
 .buttonK {
   flex: auto;
   color: #c5c6c9;
@@ -175,11 +171,14 @@ nav a {
   border-radius: 3%;
   height: 70px;
   width: 210px;
-  margin-right: 10px;
   font-size: 30px;
-  flex: auto;
 }
 
+.on {
+  flex: auto;
+  height:70px;
+  width: auto;
+}
 
 
 /*aside*/
@@ -196,7 +195,6 @@ aside {
 
 aside ul {
   list-style-type: none;
-  margin-top: 10px;
   font-size: 12px;
   padding-left: 20px;
 }
@@ -204,9 +202,9 @@ aside ul li {
   padding-left: 5px;
 }
 
-aside h3 {
-  padding-left: 30px;
-  padding-top: 10px;
+aside h5 {
+  padding-left: 25px;
+  padding-top: 5px;
 }
 
 
