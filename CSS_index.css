@@ -1,6 +1,7 @@
-html, body, .maink {
+html, body, .mainK {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -9,10 +10,12 @@ html, body, .maink {
 
 #games {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 23% 77%;
   grid-template-rows: 10% 90%;
   grid-template-areas:
-  "header ." "aside" "maink";
+  "header ."
+  "aside mainK"
+  ;
   background-image: url("images/backgroundk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,11 +24,11 @@ html, body, .maink {
 /*header*/
 header {
   color: #FFFFFF;
-  position: fixed;
   margin-top: 20px;
   margin-left: 25px;
   grid-column-start: 1;
   grid-column-end: 3;
+  z-index: 3;
 }
 
 .nav-bg {
@@ -34,13 +37,21 @@ header {
   filter: blur(10px);
   background-color: black;
   margin-top: 20px;
+
 }
 
 header a:hover {
   position: relative;
-  font-size: 20px;
-  text-emphasis-style:
-
+  font-size: 18px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
 
 .bliz-button {
@@ -56,17 +67,11 @@ nav a {
 }
 /*main*/
 
-.maink {
-  display: grid;
-  grid-template-columns: 30% 30% 25% auto;
-  grid-template-rows: 15% 5% 50% 20% 10%;
-  grid-template-areas:
-   "WoW_logo . . ."
-   "OptionsK . . ."
-   "video Hearthstone microholiday"
-   "region . . ."
-   "buttonK ON . ."
-  ;
+.mainK {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   position: relative;
   color: white;
   grid-column-start: 2;
@@ -75,40 +80,107 @@ nav a {
   grid-row-end: 3;
   border-top: 1px solid #262626;
   font-size: 14px;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-.maink .WoW_logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.WoW_logo {
   height: auto;
   width: auto;
+  scale: 0.8;
+}
+
+.OptRedeem {
+  display: flex;
+}
+
+.OptionsK:hover {
+  font-size: 110%;
+  font-weight: bold;
+  background-color: #201317;
+}
+
+.RedeemK {
+  flex: auto;
+  padding-left: 5px;
+
+}
+
+.videos {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.videoK {
+  flex: 60%;
+  position: relative;
   padding-top: 20px;
-  padding-left: 20px;
-}
-.Optionsk {
-  padding-left: 20px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  padding-bottom: 20px;
 }
 
-video {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+.Hearthstone {
+  flex: 20%;
+  padding: 18px;
+  height: 225px;
+  width: auto;
+}
+.microholiday {
+  flex: 20%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: 225px;
+  width: auto;
 }
 
+.mainK footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-self: flex-start;
+  flex: auto;
+  padding-bottom: 20px;
+}
+
+.mainK footer span {
+  padding-left: 10px;
+}
+
+.labelK {
+  padding-bottom: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.regionK {
+  width: 210px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+.bottomLine {
+  display: flex;
+  padding-top: 10px;
+  height: 70px;
+  width: 550px;
+  align-items: flex-end;
+}
+
+}
 .buttonK {
+  flex: auto;
   color: #c5c6c9;
   background-color: #0696cb;
   border: none;
-  font-weight: bolder;
-
+  border-radius: 3%;
+  height: 70px;
+  width: 210px;
+  margin-right: 10px;
+  font-size: 30px;
+  flex: auto;
 }
+
+
 
 /*aside*/
 
@@ -125,14 +197,15 @@ aside {
 aside ul {
   list-style-type: none;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
+  padding-left: 20px;
 }
-  aside ul li {
-
+aside ul li {
+  padding-left: 5px;
 }
 
 aside h3 {
-  padding-left: 38px;
+  padding-left: 30px;
   padding-top: 10px;
 }
 
@@ -179,6 +252,7 @@ aside ul li:hover {
   background-color: #201317;
 }
 
-footer {
-  text-align: left;
+aside footer {
+  padding-bottom: 20px;
+  height: 25px;
 }
