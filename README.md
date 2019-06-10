@@ -24,6 +24,8 @@ Brecht - _Shop_  brechtnulens@gmail.com
 
 >* Compare the head of all .html files
 
+>* After merging the css files - adjust the meta links in all pages!
+
 
 
 
