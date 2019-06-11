@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
-
-
 html, body, .mainK {
   height: 100%;
   margin: 0;
@@ -13,7 +10,7 @@ html, body, .mainK {
   grid-template-columns: 23% 77%;
   grid-template-rows: 10% 90%;
   grid-template-areas:
-  "header ."
+  "headerK ."
   "aside mainK"
   ;
   background-image: url("images/backgroundk.jpg");
@@ -22,7 +19,7 @@ html, body, .mainK {
   background-color: black;
 }
 /*header*/
-header {
+.headerK {
   color: #FFFFFF;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -42,7 +39,7 @@ header {
   filter: blur(30px);
 }
 
-header a:hover {
+.headerK a:hover {
   position: relative;
   font-size: 18px;
   text-shadow:
@@ -60,7 +57,7 @@ header a:hover {
   padding-top: 20px;
 }
 
-nav {
+.navK {
   top: 15px;
   grid-area: header;
   position: absolute;
@@ -69,7 +66,7 @@ nav {
   margin-left: 20px;
 }
 
-nav a {
+.navK a {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
