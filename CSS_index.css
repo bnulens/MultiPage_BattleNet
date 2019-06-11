@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+
+html, body, .mainK {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#games {
+  display: grid;
+  grid-template-columns: 23% 77%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+  "header ."
+  "aside mainK"
+  ;
+  background-image: url("images/backgroundk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+/*header*/
+header {
+  color: #FFFFFF;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 45px;
+  /*background-color: black;*/
+}
+
+.nav-bg {
+  grid-area: header;
+  position: relative;
+  background-color: #262626;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  filter: blur(30px);
+}
+
+header a:hover {
+  position: relative;
+  font-size: 18px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.bliz-button {
+  padding-top: 20px;
+}
+
+nav {
+  top: 20px;
+  grid-area: header;
+  position: absolute;
+  height: 45.39px;
+  width:100%;
+  margin-left: 20px;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+}
+
+.imgMenu {
+  padding-bottom: none;
+}
+
+/*main article*/
+
+.mainK {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-top: 1px solid #262626;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.WoW_logo {
+  height: auto;
+  width: auto;
+}
+
+.OptRedeem {
+  display: flex;
+}
+
+.OptionsK {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.RedeemK {
+  flex: auto;
+  padding-left: 5px;
+}
+
+.videos {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.videoK {
+  flex: 60%;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Hearthstone {
+  flex: 20%;
+  padding: 18px;
+  height: 225px;
+  width: auto;
+}
+.microholiday {
+  flex: 20%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: 225px;
+  width: auto;
+}
+
+.mainK footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-content: flex-end;
+  height: 150px;
+}
+
+.labelK {
+  padding-bottom: 6px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.regionK {
+  width: 210px;
+  background-color: transparent;
+  border: 1px solid #262626;
+  color: white;
+  font-size: 10px;
+}
+
+.bottomLine {
+  display: flex;
+  padding-top: 10px;
+  height: 70px;
+  width: 550px;
+  align-items: flex-end;
+}
+
+.ButtonK {
+  padding-right: 10px;
+}
+
+.buttonK {
+  flex: auto;
+  color: #c5c6c9;
+  background-color: #0696cb;
+  border: none;
+  border-radius: 3%;
+  height: 70px;
+  width: 210px;
+  font-size: 30px;
+}
+
+.on {
+  flex: auto;
+  height: 70px;
+  width: 70px;
+}
+
+.ON {
+    border: 1px solid #262626;
+}
+
+/*aside*/
+
+aside {
+  color: white;
+  border-right: 1px solid #262626;
+  border-top: 1px solid #262626;
+}
+
+aside ul {
+  list-style-type: none;
+  font-size: 12px;
+  padding-left: 20px;
+}
+aside ul li {
+  padding-left: 5px;
+  align-items: center;
+}
+
+aside h5 {
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+
+aside ul li.WoW{
+  list-style: inside url("game_logos/WoW.png");
+}
+aside ul li.Diabolo {
+  list-style: inside url("game_logos/diaboloIII.png");
+}
+aside ul li.SCII {
+  list-style: inside url("game_logos/scII.png");
+}
+aside ul li.HS {
+  list-style: inside url("game_logos/SC.png");
+}
+aside ul li.HoS {
+  list-style: inside url("game_logos/HoS.png");
+}
+aside ul li.Overwatch {
+  list-style: inside url("game_logos/Overwatch.png");
+}
+aside ul li.SC {
+  list-style: inside url("game_logos/starcraft.png");
+}
+aside ul li.WC {
+  list-style: inside url("game_logos/WCIII.png");
+}
+aside ul li.CoD {
+  list-style: inside url("game_logos/CoD.png");
+}
+aside ul li.Destiny2 {
+  list-style: inside url("game_logos/Destiny2.png");
+}
+aside ul li.CoDMW {
+  list-style: inside url("game_logos/CoDMW.png");
+}
+
+aside ul li:hover {
+  font-size: 110%;
+  border-left: 1px solid #0696cb;
+  color: white;
+  font-weight: bold;
+  background-color: #201317;
+}
+
+aside footer {
+  padding-bottom: 20px;
+  height: 25px;
+}
