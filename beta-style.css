@@ -35,6 +35,7 @@
     background-size: cover;
 }
 
+/* HOOFDBALK */
 .headNav {
     display: flex;
     align-items: center;
@@ -80,6 +81,22 @@ header a:hover {
 
 .bliz-button {
     padding-top: 20px;
+}
+
+.iconNav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    border: solid 1px #b7c0c9;
+}
+
+.iconNav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #b7c0c9;
+    padding: 18px;
 }
 
 /* SUBNAV */
