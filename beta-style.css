@@ -17,24 +17,83 @@
     url('images/galaxy-wallpaper-11.jpg');
     background-repeat: no-repeat; 
     
-    width: 1990px;
+    width: 1800px;
     height: 2000px;
 
     z-index: -10;
 }
+
+.ground {
+    
+    background-image: linear-gradient(to top,rgba(2, 64, 134, 0.884), rgba(0, 18, 39, 0.925)),
+    url('images/galaxy-wallpaper-11.jpg');
+    filter: blur(5px);
+    width: 1800px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headNav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.headNav a {
+    display: block;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #b7c0c9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    z-index: 12;
+    height: 120px;  
+    position: sticky;
+    top: 0;
+
+    border-bottom: solid 1px #b7c0c9;
+}
+
+header a:hover {
+    position: relative;
+    font-size: 32px;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.bliz-button {
+    padding-top: 20px;
+}
+
 /* SUBNAV */
 .subnav {
     display: inline-block;
     background-color:rgba(0, 38, 80, 1);
     
-    height: 39px;
-    width: 1990px;
+    height: 50px;
+    width: 1780px;
     z-index: 2;
-
-    padding: 22px;
+    padding: 20px;
 }
 
-.subnav a {
+.subnav a, input {
     display: flexbox;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,8 +102,7 @@
     color: #b7c0c9;
 
     font-size: 12px;
-    align-items: center;
-    justify-content: center;
+    
     padding-left: 18px;
     padding-right: 18px;
     box-sizing: border-box;
@@ -55,18 +113,33 @@
     -o-transition: margin 0.5s ease-out;
 }
 
+.subnav .navbarLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 70%;
+}
+.subnav .navbarRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 70%;
+  
+}
 /* BANNER */
 .shopBanner .banner {
     position: relative;
-    width: 1930px;
+    width: 1800px;
     height: auto;
     z-index: 2;
 }
 
 .shopBanner button {
     position: absolute;
-    left: 830px;
-    top: 460px;
+    left: 750px;
+    top: 550px;
 
     background-color: rgb(0, 217, 255);
     color: white;
@@ -90,8 +163,8 @@
 
     border-top: solid 1px rgba(183, 192, 201, 0.719);
     border-bottom: solid 1px rgba(183, 192, 201, 0.719);
-    max-height: 72px;
-    width: 1930px;
+    max-height: 80px;
+    width: 1740px;
     padding: 30px;
 }
 
@@ -120,7 +193,7 @@
 /* ON SALE ITEMS */
 .saleItems {
     display: grid;
-    grid-template-columns: 215px 315px 315px 315px 315px 315px 215px;
+    grid-template-columns: 65px 300px 300px 300px 300px 300px 235px;
     grid-template-rows: 80px 80px 400px 1fr;
     grid-template-areas: 
     ". . . . . . ."
@@ -128,7 +201,7 @@
     ". Item1 Item2 Item3 Item4 Item5 ."
     ". . . . . . ."; 
 
-    grid-column-gap: 13px;
+    grid-column-gap: 28px;
 }
 
 .Item1{
@@ -176,7 +249,47 @@
     background-color: rgba(2, 10, 124, 0.404);
 }
 
+.Item1::before {
+    content: url(game_logos/world-of-warcraft-logo.png);
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: scale(0.8);
+}
 
+.Item2::before {
+    content: url(game_logos/world-of-warcraft-logo.png);
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: scale(0.8);
+}
+
+.Item3::before {
+    content: url(game_logos/world-of-warcraft-logo.png);
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: scale(0.8);
+}
+
+.Item4::before {
+    content: url(game_logos/Overwatch.png);
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    
+}
+
+.Item5::before {
+    content: url(game_logos/hearthstone_logo.png);
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: scale(0.8);
+}
+
+/*  */
 .saleItems h1 {
   position: absolute;
   bottom: 20px;
@@ -200,7 +313,7 @@
     top: 265px;
     left: 25px;
     
-    color: #ffffff;
+    color: #464646;
     padding-left: 20px;
     padding-right: 20px;
 
