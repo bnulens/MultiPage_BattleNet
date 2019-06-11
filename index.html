@@ -12,14 +12,14 @@
 <body id="games">
   <header>
     <!--header bg-->
-    <div class="nav-bg"></div>
+    <div class="nav-bg"> </div>
     <!--header nav-->
     <nav>
-      <a href="#"><img src="images/blizz.png" class="bliz_button"></a>
+      <a href="#" class="imgMenu"><img src="images/blizz.png" class="bliz_button"></a>
       <a href="index.html">games</a>
       <a href="shop.html">shop</a>
       <a href="news.html">news</a>
-      <a href="#"><img src="images/overwatchL.png"></a>
+      <a href="#" class="imgMenu"><img src="images/overwatchL.png"></a>
       <a href="settings.html">...</a>
     </nav>
     <!-- birthe works on this
@@ -35,19 +35,18 @@
 <div class="mainK">
   <div class="Wow_logo"><img src="images/WoW_logo.png" class="WoW_logo"></div>
   <div class="OptRedeem">
-
-    <span class="OptionsK"><img src="images/bluecog.png"> Options</span>
-
-<span class="RedeemK"><img src="images/blue_check_box.png"> Redeem a code</span>
-</div>
-
-<div class="videos">
-  <span class="videoK"><iframe width="560" height="315" src="https://www.youtube.com/embed/wzq3sCT9NO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-  <span class="Hearthstone"><img src="images/HearthStone.jpeg" alt="HearthStone"></span>
-  <span class="microholiday"><img src="images/MicroHoliday.jpg" alt="micro-holiday"></span>
- </div>
- <footer>
-   <label class="labelK">Region/Account</label>
+    <img src="images/bluecog.png"><select name="options" class="OptionsK">
+      <option value="Options">Options</option>
+    </select>
+    <span class="RedeemK"><img src="images/blue_check_box.png"> Redeem a code</span>
+  </div>
+  <div class="videos">
+    <span class="videoK"><iframe width="400" height="225" src="https://www.youtube.com/embed/wzq3sCT9NO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+    <span class="Hearthstone"><img src="images/HearthStone.jpeg" alt="HearthStone"></span>
+    <span class="microholiday"><img src="images/MicroHoliday.jpg" alt="micro-holiday"></span>
+  </div>
+  <footer>
+   <label class="labelK">Region / Account</label>
    <select name="region" class="regionK">
      <option value="wowus">WoW1 (US):Battle for Azeroth</option>
      <option value="woweu">WoW1 (EU):Battle for Azeroth</option>

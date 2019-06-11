@@ -24,19 +24,22 @@ html, body, .mainK {
 /*header*/
 header {
   color: #FFFFFF;
-  margin-top: 20px;
-  margin-left: 25px;
   grid-column-start: 1;
   grid-column-end: 3;
-  z-index: 2;
+  height: 45px;
+  /*background-color: black;*/
 }
 
 .nav-bg {
-  position: fixed;
-  height: 100%;
-  filter: blur(10px);
-  background-color: black;
-  margin-top: 20px;
+  grid-area: header;
+  position: relative;
+  background-color: #262626;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  filter: blur(30px);
 }
 
 header a:hover {
@@ -57,6 +60,15 @@ header a:hover {
   padding-top: 20px;
 }
 
+nav {
+  top: 20px;
+  grid-area: header;
+  position: absolute;
+  height: 45.39px;
+  width:100%;
+  margin-left: 20px;
+}
+
 nav a {
   padding: 10px;
   text-decoration: none;
@@ -64,6 +76,11 @@ nav a {
   font-size: 16px;
   color: white;
 }
+
+.imgMenu {
+  padding-bottom: none;
+}
+
 /*main article*/
 
 .mainK {
@@ -92,16 +109,15 @@ nav a {
   display: flex;
 }
 
-.OptionsK:hover {
-  font-size: 110%;
-  font-weight: bold;
-  background-color: #201317;
+.OptionsK {
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 .RedeemK {
   flex: auto;
   padding-left: 5px;
-
 }
 
 .videos {
@@ -136,19 +152,23 @@ nav a {
   text-align: left;
   flex: auto;
   padding-bottom: 20px;
+  padding-top: 20px;
+  align-content: flex-end;
+  height: 150px;
 }
 
 .labelK {
   padding-bottom: 6px;
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
 }
 
 .regionK {
   width: 210px;
-  background-color: black;
+  background-color: transparent;
+  border: 1px solid #262626;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .bottomLine {
@@ -176,19 +196,18 @@ nav a {
 
 .on {
   flex: auto;
-  height:70px;
-  width: auto;
+  height: 70px;
+  width: 70px;
 }
 
+.ON {
+    border: 1px solid #262626;
+}
 
 /*aside*/
 
 aside {
   color: white;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 6;
   border-right: 1px solid #262626;
   border-top: 1px solid #262626;
 }
@@ -200,6 +219,7 @@ aside ul {
 }
 aside ul li {
   padding-left: 5px;
+  align-items: center;
 }
 
 aside h5 {
