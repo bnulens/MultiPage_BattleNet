@@ -23,6 +23,7 @@
     z-index: -10;
 }
 
+/* HOOFDBALK */
 .ground {
     
     background-image: linear-gradient(to top,rgba(2, 64, 134, 0.884), rgba(0, 18, 39, 0.925)),
@@ -35,7 +36,6 @@
     background-size: cover;
 }
 
-/* HOOFDBALK */
 .headNav {
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ header a:hover {
     background-color:rgba(0, 38, 80, 1);
     
     height: 50px;
-    width: 1780px;
+    width: 1760px;
     z-index: 2;
     padding: 20px;
 }
@@ -156,7 +156,7 @@ header a:hover {
 .shopBanner button {
     position: absolute;
     left: 750px;
-    top: 550px;
+    top: 570px;
 
     background-color: rgb(0, 217, 255);
     color: white;
@@ -306,7 +306,7 @@ header a:hover {
     transform: scale(0.8);
 }
 
-/*  */
+/* SALEITEMS */
 .saleItems h1 {
   position: absolute;
   bottom: 20px;
