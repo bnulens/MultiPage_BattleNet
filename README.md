@@ -33,3 +33,6 @@ Brecht - _Shop_  brechtnulens@gmail.com
 ### **<u>Issues</u>**
 
 > - "git pull > git add > git commit > git push"
+
+### **working LINK**
+https://bnulens.github.io/MultiPage_BattleNet/index.html?
